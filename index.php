@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./favicon.png">
+  <title>ホームページ</title>
   <style>
     body {
       background-image:url("background.jpg");
@@ -36,6 +39,18 @@
     }
     #DivForHoverItem:hover #HiddenText {
       display:block;
+    }
+
+    /* Small Screens */
+    @media only screen and (max-width: 600px) {
+        .header {
+            display: unset;
+            max-width: unset;
+            position: unset;
+        }
+        .article {
+            max-width: unset;
+        }
     }
   </style>
 </head>
